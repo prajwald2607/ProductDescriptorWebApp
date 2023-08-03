@@ -60,10 +60,12 @@ export default function Home() {
         </h1>
         <div className="text-center container rounded-md text-white my-4 p-5 flex flex-col items-center justify-center">
           <div className="upload flex flex-col items-center">
-            <div>
+           
+            <div className='flex'>
+            <h2 className='text-black mt-5 p-2 mr-2'>Enter Product Name: </h2>
               <input
                 type="text"
-                placeholder="Enter Product Name"
+                placeholder="Product Name"
                 value={productName}
                 onChange={handleProductNameChange}
                 className="border-2 text-black rounded-md w-96 p-4 m-2 text-center drop-shadow-xl"
@@ -71,7 +73,8 @@ export default function Home() {
             </div>
           </div>
           <div className="upload flex flex-col items-center">
-            <div>
+            <div className='flex'>
+            <h2 className='text-black mt-5 p-2 mr-2'>Describe  product :    </h2>
               <input
                 type="text"
                 placeholder="Describe your product"
@@ -92,6 +95,7 @@ export default function Home() {
           </button>
         </div>
         <div className="cv bg-white h-64 rounded-md text-white p-5">
+        <h2 className='text-black mt-5 p-2 mr-2'>Product Generated description: </h2>
           <textarea
             className="border-2 text-black rounded-md w-full h-64 p-4 text-center drop-shadow-xl"
             placeholder="Welcome to Product descriptor by Worqhat! Enter a product name to generate the description."
