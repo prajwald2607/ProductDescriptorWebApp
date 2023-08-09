@@ -60,11 +60,11 @@ export default function Home() {
         <div className="text-center container rounded-md text-white my-4 p-5 flex flex-col items-center justify-center">
           <div className="upload flex flex-col items-center">
            
-            <div className='flex'>
+            <div>
             <h2 className='text-black mt-5 p-2 mr-2'>Enter Product Name: </h2>
               <input
                 type="text"
-                placeholder="Product Name"
+                placeholder="Product Name (e.g.: Mobile)"
                 value={productName}
                 onChange={handleProductNameChange}
                 className="border-2 text-black rounded-md w-96 p-4 m-2 text-center drop-shadow-xl"
@@ -72,11 +72,11 @@ export default function Home() {
             </div>
           </div>
           <div className="upload flex flex-col items-center">
-            <div className='flex'>
+            <div>
             <h2 className='text-black mt-5 p-2 mr-2'>Describe  product :    </h2>
               <input
                 type="text"
-                placeholder="Describe your product"
+                placeholder="Describe your product (e.g.: Apple, black)"
                 value={productDescription}
                 onChange={handleProductDescriptionChange}
                 className="border-2 text-black rounded-md w-96 p-4 m-2 text-center drop-shadow-xl"
