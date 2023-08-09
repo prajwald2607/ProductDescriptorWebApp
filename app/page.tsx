@@ -7,11 +7,11 @@ export default function Home() {
   const [generatedDescription, setGeneratedDescription] = useState('');
   const [isGenerating, setIsGenerating] = useState(false);
 
-  const handleProductNameChange = (event: ChangeEvent<HTMLInputElement>) => {
+  const handleProductNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setProductName(event.target.value);
   };
 
-  const handleProductDescriptionChange = (event: ChangeEvent<HTMLInputElement>) => {
+  const handleProductDescriptionChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setProductDescription(event.target.value);
   };
 
